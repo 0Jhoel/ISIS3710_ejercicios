@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Events</h2>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Events</th>
+                        <th scope="col">Squirrel</th>
+                      </tr>
+                    </thead>
+                    <tbody id="events">
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6">
+                <h2>Correlation of Events</h2>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Event</th>
+                        <th scope="col">Correlation</th>
+                      </tr>
+                    </thead>
+                    <tbody id="cor_events">
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
