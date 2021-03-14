@@ -1,0 +1,58 @@
+footer * {
+  text-align: center;
+  font-weight: 700;
+  height: 70px;
+}
+
+h5,
+h1,
+#total {
+  font-weight: 700;
+}
+
+hr + h5 {
+  text-align: center;
+}
+
+.papaya-button {
+  background-color: #ffefd5;
+}
+
+.category-title > h1 {
+  text-align: center;
+}
+
+.product {
+  width: 270px;
+  margin: 10px;
+}
+
+.product > img {
+  height: 220px;
+}
+
+.cat-list {
+  padding: 20px;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+#logo {
+  width: 40px;
+}
+
+#banner {
+  width: 100%;
+}
+
+#car_layout {
+  display: none;
+}
+
+#title {
+  font-family: "Satisfy", cursive;
+  font-size: 30px;
+  color: black;
+}
