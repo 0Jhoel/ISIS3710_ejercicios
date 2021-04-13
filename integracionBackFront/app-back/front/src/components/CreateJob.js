@@ -1,5 +1,5 @@
 import CreateForm from "./CustomHooks";
-import React, {useEffect} from 'react';
+import React  from 'react';
 import * as Joi from "joi";
 
 const schema = Joi.object({
@@ -10,14 +10,6 @@ const schema = Joi.object({
 }).with("password", "repeat_password");
 
 function CreateJob() {
-
-  useEffect(() => {
-    const url = "/offers";
-    fetch(url)
-      .then(res => {
-        return res.json();
-      });
-  },[])
 
     const { handleSubmit, handleInputChange } = CreateForm(schema);
 
