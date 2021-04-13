@@ -4,11 +4,21 @@ const CreateForm = (schema) => {
   const [inputs, setInputs] = useState({});
   const [errors, setErrors] = useState("");
 
+  const url = "/offers";
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const { error } = validate();
     if (!error) {
-      console.log("Form submitted");
+        
+        fetch(url,{
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(inputs)})
+          .then(res => {
+            console.log( res.json());
+            console.log("Form submitted");
+          });
     } else {
       console.log(error);
       setErrors(error);
