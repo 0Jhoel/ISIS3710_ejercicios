@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Serie from "./Serie";
 import { Table, Container, Row, Col } from "react-bootstrap";
+import {FormattedMessage} from "react-intl";
 
 const ListSeries = () => {
   const [series, setSeries] = useState();
@@ -33,11 +34,11 @@ const ListSeries = () => {
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Name</th>
-                  <th>Channel</th>
-                  <th>Seasons</th>
-                  <th>Episodes</th>
-                  <th>Release date</th>
+                  <th><FormattedMessage id="Name"/></th>
+                  <th><FormattedMessage id="Channel"/></th>
+                  <th><FormattedMessage id="Seasons"/></th>
+                  <th><FormattedMessage id="Episodes"/></th>
+                  <th><FormattedMessage id="Release"/></th>
                 </tr>
               </thead>
               <tbody>
