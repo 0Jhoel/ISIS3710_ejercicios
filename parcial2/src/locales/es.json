@@ -1,7 +1,7 @@
 {
     "Name": "Nombre",
     "Channel": "Canal",
-    "Seasons": "Temporadas",
-    "Episodes": "Episodios",
-    "Release": "Fecha de lanzamiento"
+    "Release": "Fecha de lanzamiento",
+    "Seasons":"Temporadas",
+    "Episodes":"Episodios"
 }
